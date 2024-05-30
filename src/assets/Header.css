@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.body {
+  height: 100vh;
+  background-image: url("./ayodhya.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: system-ui, -apple-system;
+  /* position: absolute; */
+  color: #fff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 50px 30px;
+}
+
+.logo {
+  font-size: 16px;
+  font-family: sans-serif;
+  width: 7rem;
+}
+
+.navlinks ul li {
+  display: inline;
+  margin-left: 20px;
+}
+.navlinks a {
+  position: relative;
+  text-decoration: none;
+  color: #fcfcfc;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.navlinks a:after {
+  content: "";
+  position: absolute;
+  background-color: #e82574;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -7px;
+  transition: 0.3s;
+}
+
+.navlinks a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.navlinks a:hover:after {
+  width: 90%;
+}
+
+.sectionContainer {
+  margin-top: 5rem;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionContainer P {
+  font-size: 19px;
+  opacity: 0.72;
+}
+
+.sectionContainer h1 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 1rem;
+  margin: 20px auto;
+  width: 65%;
+  font-weight: 500;
+  text-align: center;
+  line-height: 65px;
+}
+
+.sectionContainer h1 span {
+  color: #e82574;
+}
